@@ -255,21 +255,21 @@ body{
 
 }
 #carouselExampleCaptions {
-    max-width: 500px; /* Adjust width as needed */
-    margin: auto; /* Centers the carousel if it's smaller than the container */
+    max-width: 500px; 
+    margin: auto; 
 }
 .carousel-item img {
-    width: 100%; /* Ensures the image covers the carousel */
-    height: auto; /* Maintains aspect ratio */
+    width: 100%; 
+    height: auto; 
 }
 #carouselExampleCaptions1 {
-    max-width: 500px; /* Adjust width as needed */
-    margin: auto; /* Centers the carousel if it's smaller than the container */
+    max-width: 500px; 
+    margin: auto; 
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #000000; /* Change to your desired color */
+    background-color: #000000; 
 
 }
 
@@ -290,7 +290,8 @@ body{
     position: relative;
     width:50%;
     animation: movedown 1s linear forwards;
-    opacity:0;
+    opacity:0; 
+    z-index: 1;
     
 }
 
@@ -311,6 +312,14 @@ body{
 }
 .container1:nth-child(6){
     animation-delay: 5s;
+
+}
+
+.container1:nth-child(7){
+    animation-delay: 6s;
+}
+.container1:nth-child(8){
+    animation-delay: 7s;
 }
 
 @keyframes movedown{
@@ -360,7 +369,7 @@ body{
     bottom: 0; /* Extends from top to bottom */
     left: 50%;
     margin-left: -3px; /* Centers the line */
-    z-index: 1; /* Should be above the background but below the text boxes */
+    z-index: 0; /* Should be above the background but below the text boxes */
     animation: moveline 6s linear forwards;
 }
 
@@ -396,6 +405,60 @@ body{
         height:100%;
     }
 }
+
+/* Project Section */ 
+
+.Project{
+    background-color: #000000;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.card:hover {
+    background-color: #00abf0;
+    border: #00abf0;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-body {
+    padding: 15px;
+    background-color: white;
+}
+
+.btn-primary {
+    color: white;
+    background-color: blue;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
 
 
 
@@ -455,6 +518,7 @@ body{
     }
 }
 
+
   
   
   
@@ -498,17 +562,17 @@ body{
   
       .Home {
           padding: 0 10%;
-          display: flex; /* Ensure flex display is active */
-          flex-direction: row; /* Elements side by side */
-          justify-content: space-between; /* Distribute space between content and image */
-          align-items: center; /* Center items vertically */
-          position: relative; /* Relative position for the parent */
+          display: flex; 
+          flex-direction: row; 
+          justify-content: space-between; 
+          align-items: center; 
+          position: relative; 
       }
   
       .home-content {
-          flex: 1; /* Allow the content to grow and use available space */
-          margin-right: 2%; /* Adjust the margin as needed */
-          max-width: 650px; /* Optional: Adjust the max width as needed */
+          flex: 1; 
+          margin-right: 2%; 
+          max-width: 650px; 
       }
   
       .home-content h1 {
