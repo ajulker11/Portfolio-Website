@@ -277,23 +277,23 @@ body{
 
 @media (min-width: 1024px) {
     .card-holder {
-        gap: 40px; /* Adjust the gap for larger screens */
-        padding: 0 10px; /* Reduce padding for larger screens */
+        gap: 40px; 
+        padding: 0 10px; 
     }
 
     #carouselExampleCaptions, #carouselExampleCaptions1 {
-        margin: 0 40px; /* Reduce the margin for larger screens */
+        margin: 0 40px; 
     }
 }
 
-/* Ensure proper spacing for smaller screens */
+
 @media (max-width: 768px) {
     .card-holder {
-        flex-direction: column; /* Stack carousels vertically on smaller screens */
+        flex-direction: column; 
     }
 
     #carouselExampleCaptions, #carouselExampleCaptions1 {
-        margin: 20px auto; /* Center carousels with vertical margin */
+        margin: 20px auto; 
     }
 }
 
