@@ -125,20 +125,20 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    background:black; /* Adjust background color as needed */
+    background:black; 
     top: 0;
     left: 0;
-    z-index: -1; /* Makes sure particles are in the background */
+    z-index: -1; 
 }
 
 #pjs{
     position:absolute;
     width: 100%;
     height: 100%;
-    background:black; /* Adjust background color as needed */
+    background:black; 
     top: 0;
     left: 0;
-    z-index: -1; /* Makes sure particles are in the background */
+    z-index: -1; 
 }
 
 .scroll-down-arrow {
@@ -148,11 +148,11 @@ body{
     transform: translateX(-50%);
     text-align: center;
     z-index: 1000;
-    font-size: 3rem; /* Adjust size of the arrow */
+    font-size: 3rem; 
     color: aliceblue;
     opacity: 0.75;
-    cursor: pointer; /* To suggest interactivity */
-    animation: bounce 2s infinite; /* Apply bouncing animation */
+    cursor: pointer; 
+    animation: bounce 2s infinite; 
   }
   
   @keyframes bounce {
@@ -160,7 +160,7 @@ body{
       transform: translateY(0);
     }
     40% {
-      transform: translateY(-20px); /* Adjust the bounce height */
+      transform: translateY(-20px); 
     }
     60% {
       transform: translateY(-15px);
@@ -388,12 +388,12 @@ body{
     content: ''; 
     position: absolute;
     width: 6px;
-    background: #fff; /* Ensures the line is white, change color as needed */
+    background: #fff; 
     top: 0;
-    bottom: 0; /* Extends from top to bottom */
+    bottom: 0; 
     left: 50%;
-    margin-left: -3px; /* Centers the line */
-    z-index: 0; /* Should be above the background but below the text boxes */
+    margin-left: -3px; 
+    z-index: 0; 
     animation: moveline 6s linear forwards;
 }
 
@@ -502,12 +502,13 @@ body{
     }
 
     .logo {
-        font-size: 20px; 
+        font-size: 15px; 
     }
 
     .navbar a {
-        font-size: 16px;
-        margin-left: 20px; 
+        font-size: 10px;
+        gap: 2px;
+        margin-left: 10px; 
     }
 
     .Home {
@@ -539,13 +540,59 @@ body{
 
     .picture {
         position: static; 
-        width: 80%; 
+        width: 90%; 
         height: auto; 
         margin: 0 auto; 
         order: 2; 
     }
 }
 
+@media (max-width: 768px) {
+    #about {
+        padding: 40px 20px;
+    }
+
+
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about-col-1 img {
+        height: auto;
+        width: 80%; 
+        display: block;
+        margin: 0 auto; 
+    }
+
+    .about-col-2 h1 {
+        font-size: 36px;
+    }
+
+    .tab-titles {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tab-links {
+        margin-right: 0;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .education {
+        height: auto;
+    }
+
+    .ed-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ed-col-1, .ed-col-2 {
+        flex-basis: 100%;
+    }
+}
 
   
   
@@ -573,52 +620,5 @@ body{
       }
   }
   
-  /* Laptops */
-@media (min-width: 901px) and (max-width: 1200px) {
-      .header {
-          padding: 20px 10%;
-      }
-  
-      .logo {
-          font-size: 23px;
-      }
-  
-      .navbar a {
-          font-size: 18px;
-          margin-left: 30px;
-      }
-  
-      .Home {
-          padding: 0 10%;
-          display: flex; 
-          flex-direction: row; 
-          justify-content: space-between; 
-          align-items: center; 
-          position: relative; 
-      }
-  
-      .home-content {
-          flex: 1; 
-          margin-right: 2%; 
-          max-width: 650px; 
-      }
-  
-      .home-content h1 {
-          font-size: 44px;
-      }
-  
-      .home-content h3 {
-          font-size: 30px;
-      }
-  
-      .picture {
-          position: absolute; 
-          right: 10%; 
-          bottom: 0; 
-          width: calc(50% - 10%); 
-          height: calc(100vh - 40px); 
-          object-fit: cover; 
-      }
-  }
-  
+
   
